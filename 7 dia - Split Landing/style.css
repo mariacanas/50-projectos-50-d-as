@@ -1,0 +1,125 @@
+
+
+:root {
+    --left-bg-color: rgba(87, 84, 236, 0.7);
+    --right-bg-color: rgba(43, 43, 43, 0.8);
+    --left-btn-hover-color: rgba(87, 84, 236, 1);
+    --right-btn-hover-color: rgba(28, 122, 28, 1);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+h1{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    white-space: nowrap;
+    transform: translateX(-50%);
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.split{
+    width: 50%;
+    position: absolute;
+    height: 100%;
+    overflow: hidden;
+    color: white;
+    font-size: 35px;
+}
+
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+    border: solid 2px white;
+    border-radius: 5px;
+    padding: 25px;
+    text-transform: uppercase;
+    width: 400px;
+}
+
+.split.left{
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('https://50projects50days.com/projects/split-landing-page/ps.jpg');
+}
+
+.split.left::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--left-bg-color);
+    transform: translateX(-50%)
+
+}
+.split.right{
+    background-size: cover;
+    right: 0;
+    background-repeat: no-repeat;
+    background-image: url('https://50projects50days.com/projects/split-landing-page/xbox.jpg');
+}
+
+.split.right::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: var(--right-bg-color);
+    transform: translateX(-50%);
+}
+.hover-left .left {
+  width: 75%;
+}
+  
+.hover-left .right {
+  width: 25%;
+}
+  
+.hover-right .right {
+    width: 75%;
+}
+  
+.hover-right .left {
+  width: 25%;
+}
+
+.split.left .btn:hover {
+    background-color: var(--left-btn-hover-color);
+    border-color: var(--left-btn-hover-color);
+}
+  
+.split.right .btn:hover {
+    background-color: var(--right-btn-hover-color);
+    border-color: var(--right-btn-hover-color);
+}
+
+.split.left,
+.split.left::before,
+.split.right,
+.split.right::before{
+    transition: all 0.9s ease-in-out;
+}
+  
