@@ -1,0 +1,49 @@
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #e1e1e1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container{
+    color: black;
+    background-color: antiquewhite;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+    min-width: 200px;
+    padding: 20px;
+}
+
+.key{
+    display: inline-flex;
+    position: relative;
+    flex-direction: column;
+
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.key small{
+    color: black;
+    left: 0;
+    top: -40px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
