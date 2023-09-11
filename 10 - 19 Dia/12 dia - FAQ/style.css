@@ -1,0 +1,85 @@
+
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Muli', sans-serif;
+    background-color: #f0f0f0;
+    
+}
+
+h1{
+    text-align: center;
+    margin: 100px;
+}
+
+.container{
+    width: 600px;
+    margin: auto;
+}
+
+.pregunta{
+    background-color: transparent;
+    border: 1px solid grey;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+.btn{
+    background-color: transparent;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    padding: 0;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    height: 30px;
+    width: 30px;
+}
+
+.pregunta.active{
+    background-color: white;
+    box-shadow: 0 3px 5px black;
+}
+
+.pregunta.active .text{
+    display: block;
+}
+
+.pregunta .fa-times{
+    display: none;
+}
+
+.pregunta.active .btn .fa-times{
+    display: block;
+}
+
+.pregunta.active .btn{
+    background-color: grey;
+}
+
+.pregunta.active .btn .fa-chevron-down{
+    display: none;
+}
+
+
+.title{
+    margin: 0 35px 0 0;
+}
+
+.text{
+    display: none;
+    margin: 30px 0 0;
+}
