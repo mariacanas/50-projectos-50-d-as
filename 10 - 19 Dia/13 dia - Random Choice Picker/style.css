@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Open+Sans:wght@600&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #2b88f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.container{
+    width: 500px;
+}
+
+h3{
+    color: white;
+    text-align: center;
+}
+
+textarea{
+    border: none;
+    font-size: 16px;
+    width: 100%;
+    height: 100px;
+}
+
+.tag{
+    display: inline-block;
+    border-radius: 50px;
+    padding: 5px;
+    margin: 5px;
+    color: white;
+    background-color: orange;
+}
+
+.tag.seleccionado{
+    background-color: darkblue;
+}
+
+#tagSeleccionadoContainer{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: orange;
+    margin-top: 10px;
+}
+
+#tagSeleccionadoText{
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
+    border-radius: 50px;
+}
