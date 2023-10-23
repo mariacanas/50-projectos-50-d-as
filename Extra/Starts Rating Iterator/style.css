@@ -1,0 +1,33 @@
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+
+.stars-button{
+    font-size: 45px;
+    width: 45px;
+    background-color: transparent;
+    color: white;
+    margin: 15px;
+    cursor: pointer;
+    border: none;
+}
+
+.rotate{
+    position: relative;
+    font-size: 30px;
+    top: 50%;
+}
+
+.checked{
+    color: yellow;
+}
