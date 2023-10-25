@@ -1,0 +1,100 @@
+
+
+:root{
+    --primary-color: black;
+    --secodary-color: white;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html.dark , .btn.dark, .minuteAnalogico.dark, .hourAnalogico.dark{
+    background-color: var(--primary-color);
+    color: var(--secodary-color);
+}
+
+html{
+    background-color: var(--secodary-color);
+    color: var(--primary-color);
+}
+
+body{
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 100vh;
+    margin: 0;
+}
+
+.clock-container{
+    width: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.clock-digital{
+    display: flex;
+    width: 75%;
+    margin: auto;
+    padding-top: 1.5rem;
+    font-size: 60px;
+    justify-content: center;
+}
+
+.clock-analogico{
+    position: relative;
+    width: 220px;
+    height: 220px;
+}
+
+.hourAnalogico, .minuteAnalogico, .secondAnalogico{
+    background-color: var(--secodary-color);
+    position: absolute;
+    left: 50%;
+    transform-origin: bottom center;
+    transition: all 0.1s ease-in;
+}
+
+.hourAnalogico{
+    height: 60px;
+    width: 10px;
+    top: 50px;
+}
+
+.minuteAnalogico {
+    height: 80px;
+    width: 5px;
+    top: 30px;
+}
+
+.secondAnalogico  {
+    height: 90px;
+    width: 3px;
+    top: 20px;
+    background-color: #2196f3;
+}
+
+.btn{
+    padding: 8px 12px;
+    border: 0;
+    border-radius: 4px;
+    background-color: var(--secodary-color);
+    color: var(--primary-color);
+    cursor: pointer;
+    top: 100px;
+    position: absolute;
+}
+
+.date{
+    color: #aaa;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+}
+
