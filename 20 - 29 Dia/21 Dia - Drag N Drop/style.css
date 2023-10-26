@@ -1,0 +1,47 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: steelblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0;
+    height: 100vh;
+}
+
+.empty{
+    height: 150px;
+    width: 150px;
+    background-color: white;
+    border: solid 2px black;
+    margin: 10px;
+    z-index: 1;
+}
+
+.fill{
+    background-image: url('img/fondo.jpeg');
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    height: 146px;
+    width: 146px;
+    
+}
+
+.hovered{
+    background-color: #333;
+    border-color: white;
+    border-style: dash;
+}
+
+
+
+@media (max-width: 800px) {
+    body {
+      flex-direction: column;
+    }
+  }
