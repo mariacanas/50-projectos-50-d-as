@@ -1,0 +1,51 @@
+
+
+:root{
+    --color-primary: black;
+    --color-button: purple;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.ripple {
+    background-color: var(--color-button);
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 20px 30px;
+    overflow: hidden;
+    margin: 10px 0;
+    position: relative;
+    border: none;
+}
+  
+.ripple.circle {
+    position: absolute;
+    background-color: #fff;
+    width: 10px;
+    height: 10px;
+    overflow: hidden;
+    transform:  scale(0);
+    animation: scale 0.2s ease-out;
+  }
+  
+  @keyframes scale {
+    to {
+      transform:  scale(1);
+      opacity: 0;
+    }
+  }
+  
