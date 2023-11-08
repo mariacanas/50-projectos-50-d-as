@@ -1,0 +1,80 @@
+
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    background-color: #3b3b98;
+    color: #fff;
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+.container {
+    background-color: #23235b;
+    box-shadow: 0 1px 3px white;
+    padding: 20px;
+    width: 350px;
+    max-width: 100%;
+}
+
+h2{
+    margin: 15px;
+    text-align: center;
+}
+
+.result-password{
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+}
+
+.result-password button{
+    font-size: 18px;
+}   
+
+#result{
+    background-color: none;
+    height: 100%;
+    color: white;
+}
+
+.btn{
+    background-color: #3b3b98;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+}
+
+.btn:active{
+    transform: scale(0.98);
+}
+
+#generatePassword{
+    margin-top: 15px;
+    width: 100%;
+}
+
+.settings{
+
+}
+
+.setting{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
