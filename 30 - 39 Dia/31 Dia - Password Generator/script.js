@@ -31,7 +31,7 @@ btnGeneratePassword.addEventListener('click', () =>{
     resultPassword.innerText = generatePassword(lengthPass,hasLower,hasNumbers,hasSymbols,hasUpper);
 });
 
-function generatePassword(length,upper,lower,numbers,symbols){
+function generatePassword(length,lower,numbers,symbols,upper){
     let generatedPassword = '';
 
     let charset = '';
@@ -51,6 +51,7 @@ function generatePassword(length,upper,lower,numbers,symbols){
             generatedPassword
              += charset[randomIdx];
         }
+        charset = '';
         return generatedPassword;
     }
 }
